@@ -82,7 +82,7 @@ $ export MODEL_SIZE=13B
 
 $ torchrun --nproc_per_node MP example.py --ckpt_dir $TARGET_FOLDER/$MODEL_SIZE --tokenizer_path $TARGET_FOLDER/tokenizer.model
 
-For example 13B:
+#### For example 13B:
 $ torchrun --nproc_per_node 2 example.py --ckpt_dir $TARGET_FOLDER/$MODEL_SIZE --tokenizer_path $TARGET_FOLDER/tokenizer.model
 
 
