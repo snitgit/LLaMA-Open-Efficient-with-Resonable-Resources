@@ -2,11 +2,6 @@
 
  "... a collection of foundation language models ranging from 7B to 65B parameters. We train our models on trillions of tokens, and show that it is __possible to train state-of-the-art models__ using _publicly available datasets exclusively, without resorting to proprietary and inaccessible datasets_".[1]
 
-### Paper on Video:[1]
-https://www.youtube.com/watch?v=E5OnoYF2oAk
-
-https://arxiv.org/abs/2302.13971
-
 
 ### How to inference:
 https://github.com/juncongmoo/pyllama
@@ -64,7 +59,7 @@ What do you think is the meaning
 
 ### Start a web server
 
-The following command will start a flask web server:
+The following command will start a flask web server, actually fastAPI?:
 
 $ conda install pydantic -c conda-forge
 
@@ -108,12 +103,24 @@ $ torchrun --nproc_per_node 2 example.py --ckpt_dir $TARGET_FOLDER/$MODEL_SIZE -
 | 30B        | 4       |
 | 65B        | 8       |
 
+### References and Student path
+1. Original Paper
 
-From <https://github.com/juncongmoo/pyllama/tree/a8bf166571f228d2c988a26e31d8ce65612bc2da> 
+https://arxiv.org/abs/2302.13971
+
+2. Paper on Video:
+
+https://www.youtube.com/watch?v=E5OnoYF2oAk
 
 
 
-ChatLLaMA:
+3. Main source of learing
+
+ https://github.com/juncongmoo/pyllama/tree/a8bf166571f228d2c988a26e31d8ce65612bc2da
+
+
+
+Next ... ChatLLaMA:
 
 https://github.com/juncongmoo/chatllama
 
