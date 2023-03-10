@@ -1,5 +1,11 @@
-### Paper on Video:
+# LLaMA Learning
+
+ "... a collection of foundation language models ranging from 7B to 65B parameters. We train our models on trillions of tokens, and show that it is __possible to train state-of-the-art models__ using _publicly available datasets exclusively, without resorting to proprietary and inaccessible datasets_".[1]
+
+### Paper on Video:[1]
 https://www.youtube.com/watch?v=E5OnoYF2oAk
+
+https://arxiv.org/abs/2302.13971
 
 
 ### How to inference:
@@ -7,11 +13,14 @@ https://github.com/juncongmoo/pyllama
 
 ### Download Model:
 https://github.com/shawwn/llama-dl
-curl -o- https://raw.githubusercontent.com/shawwn/llama-dl/56f50b96072f42fb2520b1ad5a1d6ef30351f23c/llama.sh | bash
+
+$ curl -o- https://raw.githubusercontent.com/shawwn/llama-dl/56f50b96072f42fb2520b1ad5a1d6ef30351f23c/llama.sh | bash
+
 
 ### Installation extend to conda previous environment on NLP
 
 $ conda activate nlp
+
 $ curl -o- https://raw.githubusercontent.com/shawwn/llama-dl/56f50b96072f42fb2520b1ad5a1d6ef30351f23c/llama.sh | bash
 
 $  pip install pyllama
@@ -25,6 +34,7 @@ $ cd pyllama
 $ export CKPT_DIR=/home/snit.san/NLP/LLaMA/7B
 
 $ export TOKENIZER_PATH=/home/snit.san/NLP/LLaMA/tokenizer.model
+
 
 ### Interfence on NVIDIA A100 
 $ python inference_driver.py --ckpt_dir $CKPT_DIR --tokenizer_path $TOKENIZER_PATH
@@ -51,6 +61,7 @@ What do you think is the meaning
 
 ==========================================================================
 
+
 ### Start a web server
 
 The following command will start a flask web server:
@@ -67,6 +78,7 @@ $ python web_server_single.py  --ckpt_dir $CKPT_DIR --tokenizer_path $TOKENIZER_
 
 
 ### Test with Postman alternative by command line json posting:
+We can modify port to start up __fastapi__ such as 5000.
 
 $  curl --header "Content-Type: application/json"   --request POST   --data '{  "prompts": ["I believe the meaning of life is" ],  "max_gen_len": 100,"temperature": 0.8,  "top_p": 0.95}' http://127.0.0.1:5000/llama/
 
