@@ -7,16 +7,16 @@
 https://github.com/juncongmoo/pyllama
 
 ### Download Model:
-https://github.com/shawwn/llama-dl
 
-$ curl -o- https://raw.githubusercontent.com/shawwn/llama-dl/56f50b96072f42fb2520b1ad5a1d6ef30351f23c/llama.sh | bash
+ In order to download the checkpoints and tokenizer, fill this google form https://docs.google.com/forms/d/e/1FAIpQLSfqNECQnMkycAp2jP4Z9TFX0cGR4uf7b_fBxjY_OjhJILlKGA/viewform
+
+Follow the instructions in the Llama repository to download the model weights and tokenizer.
 
 
 ### Installation extend to conda previous environment on NLP
 
 $ conda activate nlp
 
-$ curl -o- https://raw.githubusercontent.com/shawwn/llama-dl/56f50b96072f42fb2520b1ad5a1d6ef30351f23c/llama.sh | bash
 
 $  pip install pyllama
 
@@ -118,14 +118,18 @@ https://www.youtube.com/watch?v=E5OnoYF2oAk
 
  https://github.com/juncongmoo/pyllama/tree/a8bf166571f228d2c988a26e31d8ce65612bc2da
 
+@article{touvron2023llama,
 
+  title={LLaMA: Open and Efficient Foundation Language Models},
+  
+  author={Touvron, Hugo and Lavril, Thibaut and Izacard, Gautier and Martinet, Xavier and Lachaux, Marie-Anne and Lacroix, Timoth{\'e}e and Rozi{\`e}re, Baptiste and Goyal, Naman and Hambro, Eric and Azhar, Faisal and Rodriguez, Aurelien and Joulin, Armand and Grave, Edouard and Lample, Guillaume},
+  
+  journal={arXiv preprint arXiv:2302.13971},
+  
+  year={2023}
+  
+}
 
-Next ... ChatLLaMA:
-
-https://github.com/juncongmoo/chatllama
-
-
-
-
+ “LLaMA is licensed under the LLaMA License, Copyright (c) Meta Platforms, Inc. All Rights Reserved.”
 
 
